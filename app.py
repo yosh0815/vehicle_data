@@ -4,7 +4,7 @@ import pandas as pd
 import plotly.express as px
 
 #reading dataframe
-vehicles_df = pd.read_csv("https://github.com/yosh0815/vehicle_data/blob/main/vehicles_us.csv")
+vehicles_df = pd.read_csv("vehicles_us.csv")
 
 #changing null values from the 4wd columns to 0 to show which cars are not 4wd
 vehicles_df['is_4wd'] = vehicles_df['is_4wd'].fillna(0)
